@@ -21,4 +21,21 @@ body {
     display: flex;
     justify-content: space-between;
   }
+/* 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
 
+th,td{
+ border-style: solid;
+}
+
+.search{
+  float: right;
+}
+
+nav{
+  background-color:#fcbf16;;
+}

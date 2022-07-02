@@ -1,31 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhon-C01</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <h1>Trang Web đầu tiên</h1>
-    <img src="img/planets.gif" alt="Ảnh logo">
-    <section>
-        <nav>
-            <a href="">Footer</a>
-            <a href="">Sun</a>
-            <a href="">Gọi ngay</a>
-            <a href="">Lời Chào</a>
-            <a href="">Liên hệ</a>
-            <a href="">Tìm Kiếm</a>
-        </nav>
-    </section>
-    <section >
-        <aside >
-            <h2>Tiêu đề 1</h2>
-            <h3>Mô tả ngắn </h3>
-            <p>Lorem ipsum dolor sit amet, consetetur adipisicing elit.repellat dolorun deleniti,invetore baetae,ípsum </p>
+    <img src="img/planets.gif" alt="Ảnh Phong Cảnh" usemap="#Planes" />
+    <map name="Planes"
+      ><area
+        target="_blank"
+        shape="rect"
+        coords="81,125,1,0"
+        href="Pages/sun.html"
+        alt="Đến trang sun"
+      />
+      <area
+        target="_blank"
+        shape="circle"
+        coords="96,58,12"
+        href="Pages/mercur.html"
+        alt="Mercur"
+      />
+      <area
+        target="_blank"
+        shape="circle"
+        coords="125,59,17"
+        href="Pages/venus.html"
+        alt="Venus"
+      />
+    </map>
+    <nav>
+      <a href="#1">Footer</a>
+      <a href="./Pages/sun.html">Sun</a>
+      <a href="tel:0899445790">Gọi ngay</a>
+      <a href="Js/script.js">Lời chào</a>
+      <a href="mailto: kminacademy@gmail.com">Liên hệ</a>
+      <a class="search" href="https://www.google.com.vn/">Tìm kiếm</a>
+    </nav>
+    <main>
+      <section style="width: 70%; float: left">
+        <aside>
+          <h2>Tiêu đề 01</h2>
+          <h3>Mô tả ngắn</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam
+          deleniti vitae, distinctio saepe soluta, cupiditate quas.
+          <div>
+            <img
+              style="width: 100%"
+              src="img/article01.jpg"
+              alt="Ảnh phong cảnh 2"
+            />
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          dolorum culpa aut, atque ut eius expedita tempora aliquid eum nulla
+          porro provident. Maiores atque delectus vel a pariatur vitae nisi!
+
+          <h2>Tiêu đề 2</h2>
+          <h3>Mô tả ngắn, Dec 7, 2025</h3>
+          <p>Danh sách học viên tham gia Bug sharing</p>
+          <table style="border-style: solid">
+            <tr>
+              <th>Họ Tên</th>
+              <th>Lớp</th>
+              <th>SĐT</th>
+            </tr>
+            <tr>
+              <td>Vũ Đình Bảo</td>
+              <td>Tư duy và kĩ năng lập trình</td>
+              <td>0899445790</td>
+            </tr>
+            <tr>
+              <td>Lê Hồng Phúc</td>
+              <td>Lập trình Web Front-end</td>
+              <td>012334566</td>
+            </tr>
+            <tr>
+              <td>Đặng Minh Tân</td>
+              <td>Lập trình Web Back-end với NodeJs</td>
+              <td>NULL</td>
+            </tr>
+          </table>
+          <h2>Tiêu đề 3</h2>
+          <p>Các món có thể gọi:</p>
+          <ul style="list-style: square">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca-Cola</li>
+          </ul>
+          <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca-Cola</li>
+          </ul>
+          <hr />
+          <p>Các món có thể gọi:</p>
+          <ol style="list-style: upper-alpha">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca-Cola</li>
+          </ol>
+          <ol start="5">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca-Cola</li>
+          </ol>
+          <hr />
+          <p>Coffe và Milk nghĩa là gì</p>
+          <dl>
+            <dt>Coffee</dt>
+            <dd>- Thức uống làm cho bạn phê</dd>
+            <dt>Milk</dt>
+            <dd>- Thức uống tốt cho sức khoẻ</dd>
+          </dl>
+          <hr />
+          <p>Menu chi tiết hơn</p>
+          <ul>
+            <li>Coffee</li>
+            <li>
+              <dl>
+                <dt>Tea</dt>
+                <dd>Black tea</dd>
+                <dd>Green tea</dd>
+              </dl>
+            </li>
+            <li>Milk</li>
+          </ul>
+          <h3>Đăng ký khoá học</h3>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSevn96h9DiVPWt5dXdyJx_4S29PcmLAh5fKTKhksw2wvJoaXQ/viewform?embedded=true"
+            frameborder="0"
+            width="100%"
+          ></iframe>
         </aside>
-    </section>
-</body>
+      </section>
+      <section style="width: 30%; float: right; margin-left: 30px">
+        <aside>
+          <div>
+            <img
+              style="width: 100%"
+              src="img/avarta.png"
+              alt="Ảnh giảng viên"
+            />
+          </div>
+          <h3 style="text-align: center">Vũ Đình Bảo</h3>
+          <p style="text-align: center">
+            Lorem ipsum dolor sit amet consectetur
+          </p>
+          <h3>Bài mới</h3>
+          <audio controls>
+            <source src="media/audio.mp3" type="audio/mpeg" />
+          </audio>
+          <div>
+            <video controls style="width: 100%">
+              <source src="media/video.mp4" />
+            </video>
+          </div>
+          <h3>Tin vắng</h3>
+          Lorem ipsum dolor sit, amet consectetur.
+          <h3>Chúc Mừng Năm Mới ;v</h3>
+          <div>
+            <a href="https://kmin.edu.vn/"
+              ><img style="width: 100%" src="img/noel.gif" alt="Ảnh noel"
+            /></a>
+          </div>
+          <h3>Theo dõi Fanpage</h3>
+          <iframe src="https://www.w3schools.com/" frameborder="0"></iframe>
+        </aside>
+      </section>
+    </main>
+    <footer id="1">
+      <h2 style="text-align: center; background-color: #173451">
+        KMIN ACADEMY
+      </h2>
+    </footer>
+  </body>
 </html>
